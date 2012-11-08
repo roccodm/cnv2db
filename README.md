@@ -2,12 +2,12 @@ cnv2db
 ======
 
  
- A simple Seabird cnv file parser that stores the data
+ A simple Seabird cnv file parser written in python that stores the data
  into a mysql db 
 
- For the sql structure, see below, at the end of the code 
+ It uses almost standard libraries and regular expression to parse the cnv file.
 
- Requisites: python-mysqldb library
+ Requires: python-mysqldb library
 
  version 0.3.1
  
@@ -16,3 +16,12 @@ cnv2db
  Author:
  Rocco De Marco (rukkuntu@yahoo.it) - November 2012
 
+
+Prerequisites:
+
+1: configure a mysql database
+2: create the needed tables (sql included in the code)
+
+Usage:
+
+python cnv2db filename.cnv
