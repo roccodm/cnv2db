@@ -24,9 +24,9 @@ import os
 
 # Database mysql access
 host = "localhost"
-user = "ctd"
-passwd = "DPYbLSE8eW8pEHFx"
-db = "acustica"
+user = "username"
+passwd = "password
+db = "dbname"
 
 # Dummy function called in case of error
 def die(message):
