@@ -25,3 +25,9 @@ Prerequisites:
 Usage:
 
 python cnv2db filename.cnv
+
+References:
+
+Seabird CTD: http://www.seabird.com/products/profilers.htm
+
+Some CNV example files: http://classroom.oceanteacher.org/pluginfile.php/3233/mod_page/content/16/ASCLME-CTD.zip
