@@ -9,7 +9,7 @@
 # For the sql structure, see below, at the end of the code 
 #
 # Requisites: python-mysqldb library
-# version 0.4
+# version 0.4.1
 # License: CC-BY-NC-SA v. 3.0
 # Author:
 # Rocco De Marco (rocco_demarco(a)an_ismar_cnr_it) -> s/_/\./g
@@ -17,12 +17,7 @@
 #
 ###############################################################
 ''' CHANGELOG 
-v. 0.4.0
-1) Rewritten in class style
-
-v. 0.3.2: 
-1) choosed "NMEA UTC (Time)" as date/time parameter instead than start_date
-
+   see cnv2db_class.py
 '''
 
 
@@ -33,9 +28,9 @@ from cnv2db_class import *
 
 # Database mysql access
 host = "localhost"
-user = "ctd"
-passwd = "DPYbLSE8eW8pEHFx"
-db = "acustica"
+user = "username"
+passwd = "password"
+db = "database"
 
 # Dummy function called in case of error
 def die(message):

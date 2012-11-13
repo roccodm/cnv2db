@@ -9,7 +9,7 @@
 # For the sql structure, see below, at the end of the code 
 #
 # Requisites: python-mysqldb library
-# version 0.4
+# version 0.4.1
 # License: CC-BY-NC-SA v. 3.0
 # Author:
 # Rocco De Marco (rocco_demarco(a)an_ismar_cnr_it) -> s/_/\./g
@@ -17,6 +17,9 @@
 #
 ###############################################################
 ''' CHANGELOG 
+v. 0.4.1
+1) Splitted source in two files
+
 v. 0.4.0
 1) Rewritten in class style
 
