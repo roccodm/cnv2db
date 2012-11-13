@@ -1,0 +1,34 @@
+#-------------------------------------------
+# SQL for data structure
+# mysql syntax
+#-------------------------------------------
+
+CREATE TABLE IF NOT EXISTS `CTD_DATA` (
+  `CTD_DATA_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `CTD_STATION_ID` int(11) NOT NULL,
+  `SENSOR` int(11) NOT NULL,
+  `VALUE` float NOT NULL,
+  PRIMARY KEY (`CTD_DATA_ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE IF NOT EXISTS `CTD_INFO` (
+  `CTD_INFO_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `CTD_STATION_ID` int(11) NOT NULL,
+  `PARAMETER` varchar(255) NOT NULL,
+  `VALUE` text NOT NULL,
+  PRIMARY KEY (`CTD_INFO_ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE IF NOT EXISTS `CTD_STATION` (
+  `STATION_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `CRUISE` varchar(64) NOT NULL,
+  `DATE` varchar(48) NOT NULL,
+  `LONGITUDE` varchar(16) NOT NULL,
+  `LATITUDE` varchar(16) NOT NULL,
+  `STATION_NAME` varchar(32) NOT NULL,
+  `DEPTH` float NOT NULL,
+  PRIMARY KEY (`STATION_ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+

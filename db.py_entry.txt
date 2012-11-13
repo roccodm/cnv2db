@@ -1,0 +1,26 @@
+#--------
+db.define_table('CTD_STATION',
+    Field('CRUISE','string'),
+    Field('DATE','string'),
+    Field('LONGITUDE','string'),
+    Field('LATITUDE','string'),
+    Field('STATION_NAME','string'),
+    Field('DEPTH','double')
+    )
+
+#--------
+db.define_table('CTD_INFO',
+    Field('CTD_STATION_ID','reference CTD_STATION'),
+    Field('PARAMETER','string'),
+    Field('VALUE','text')
+    )
+
+
+#--------
+db.define_table('CTD_DATA',
+    Field('CTD_STATION_ID','reference CTD_STATION'),
+    Field('SENSOR','integer'),
+    Field('VALUE','double')
+    )
+
+
